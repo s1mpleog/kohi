@@ -1,6 +1,11 @@
-#include <test.h>
+#include <core/logger.h>
 
 int main(void) {
-    print_int(42);
+    KFATAL("A test Message: %f", 3.14f);
+    KERROR("A test Message: %f", 3.14f);
+    KWARN("A test Message: %f", 3.14f);
+    KINFO("A test Message: %f", 3.14f);
+    KDEBUG("A test Message: %f", 3.14f);
+    KTRACE("A test Message: %f", 3.14f);
     return 0;
 }
