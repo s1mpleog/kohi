@@ -1,4 +1,5 @@
 #include "logger.h"
+#include "asserts.h"
 
 // TODO: temporary
 #include <stdio.h>
@@ -11,6 +12,10 @@ b8 initialize_logging() {
 };
 void shutdown_logging(){
     // TODO: cleanup logging/write queued entries.
+};
+
+void report_assertion_failure(const char* expression, const char* message, const char* file, i32 line) {
+    log_output(LOG_LEVEL_FATAL, "Assertion Failure: %s, message %s, in file: %s line: %d\n", expression, message, file, line);
 };
 
 KAPI void log_output(log_level level, const char* message, ...) {
