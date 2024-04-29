@@ -1,5 +1,28 @@
 {
   "spellright.language": [],
   "spellright.documentTypes": ["latex", "plaintext"],
-  "cSpell.words": ["KAPI", "KASSERTIONS", "KERROR", "KRELEASE", "KWARN"]
+  "cSpell.words": [
+    "KAPI",
+    "KASSERTIONS",
+    "KERROR",
+    "Kohi",
+    "KRELEASE",
+    "KWARN"
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.c": "c",
+    "*.s": "arm",
+    "test.h": "c",
+    "vulkan.h": "c",
+    "vulkan_core.h": "c",
+    "vk_platform.h": "c",
+    "type_traits": "c",
+    "typeinfo": "c",
+    "windowsx.h": "c",
+    "vulkan_platform.h": "c",
+    "renderer_frontend.h": "c",
+    "chrono": "c",
+    "typeindex": "c"
+  }
 }
